@@ -1,12 +1,41 @@
 function Skills() {
   return (
-    <div className="container bg-white p-16 mt-16 justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-      <img
-        className="h-auto max-w-full"
-        src="tech-logos.png"
-        alt="image description"
-      ></img>
-    </div>
+    <section className="bg-white py-16 mt-16">
+      <div className="container mx-auto px-8 md:px-14 lg:px-24">
+        <div className="grid grid-cols-2 md:flex md:justify-between items-center gap-8 md:gap-12">
+          <img
+            src="csharp.png"
+            alt="C# Logo"
+            className="h-20 w-auto object-contain"
+          />
+          <img
+            src="dotnet.png"
+            alt=".NET Logo"
+            className="h-20 w-auto object-contain"
+          />
+          <img
+            src="docker.png"
+            alt="Docker Logo"
+            className="h-20 w-auto object-contain"
+          />
+          <img
+            src="kubernetes.png"
+            alt="Kubernetes Logo"
+            className="h-20 w-auto object-contain"
+          />
+          <img
+            src="sql-server.png"
+            alt="sql-server Logo"
+            className="h-20 w-auto object-contain"
+          />
+           <img
+            src="postgresql.png"
+            alt="postgresql Logo"
+            className="h-20 w-auto object-contain"
+          />
+        </div>
+      </div>
+    </section>
   );
 }
 
