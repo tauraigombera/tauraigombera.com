@@ -1,4 +1,4 @@
-import Navbar from "../Navbar";
+import Header from "../Header";
 import Hero from "../Hero";
 import Skills from "../Skills";
 import Footer from "../Footer";
@@ -7,7 +7,7 @@ import Connect from "../Connect";
 function Home() {
   return (
     <div>
-      <Navbar />
+      <Header />
       <Hero />
       <Skills />
       <Portfolio />
