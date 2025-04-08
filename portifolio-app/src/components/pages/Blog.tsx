@@ -1,87 +1,77 @@
 import Header from "../Header";
 import Footer from "../Footer";
-import Placeholder from "../icons/Placeholder";
 
-interface BlogPost {
-  id: number;
-  image: JSX.Element;
-  date: string;
-  title: string;
-  excerpt: string;
-  body: string;
-}
+function Blog() {
 
-const BlogPosts: BlogPost[] = [
-  {
-    id: 1,
-    image: <Placeholder />,
-    date: `March 4, 2024`,
-    title: `Chaos Engineering with .NET`,
-    excerpt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus elementum semper. Pellentesque efficitur fringilla orci, in maximus neque malesuada sed. Pellentesque id turpis non purus convallis tempor. Fusce ultrices nunc ut ligula euismod tempor sit amet ac ex. Ut vitae orci vehicula, cursus eros eget, vehicula ipsum. Sed nec convallis justo. Quisque quis augue eget sapien ultrices placerat eget eu urna. Praesent eget consectetur purus. Donec sollicitudin sed ipsum vitae dapibus. Etiam sed est sed velit finibus scelerisque. Praesent ultricies id dolor in tempor. Proin nec turpis nec arcu maximus volutpat. Mauris cursus, neque in lacinia viverra, mi dui eleifend metus, molestie ultricies augue velit sed orci. Quisque sit amet ex ligula.`,
-  },
-  {
-    id: 2,
-    image: <Placeholder />,
-    date: `March 4, 2024`,
-    title: `Simplifying Collection Initialization: A Deep Dive into C# 12’s Revolutionary Collection Literals`,
-    excerpt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus elementum semper. Pellentesque efficitur fringilla orci, in maximus neque malesuada sed. Pellentesque id turpis non purus convallis tempor. Fusce ultrices nunc ut ligula euismod tempor sit amet ac ex. Ut vitae orci vehicula, cursus eros eget, vehicula ipsum. Sed nec convallis justo. Quisque quis augue eget sapien ultrices placerat eget eu urna. Praesent eget consectetur purus. Donec sollicitudin sed ipsum vitae dapibus. Etiam sed est sed velit finibus scelerisque. Praesent ultricies id dolor in tempor. Proin nec turpis nec arcu maximus volutpat. Mauris cursus, neque in lacinia viverra, mi dui eleifend metus, molestie ultricies augue velit sed orci. Quisque sit amet ex ligula.`,
-  },
-  {
-    id: 3,
-    image: <Placeholder />,
-    date: `March 4, 2024`,
-    title: `Async/Await in C#`,
-    excerpt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus elementum semper. Pellentesque efficitur fringilla orci, in maximus neque malesuada sed. Pellentesque id turpis non purus convallis tempor. Fusce ultrices nunc ut ligula euismod tempor sit amet ac ex. Ut vitae orci vehicula, cursus eros eget, vehicula ipsum. Sed nec convallis justo. Quisque quis augue eget sapien ultrices placerat eget eu urna. Praesent eget consectetur purus. Donec sollicitudin sed ipsum vitae dapibus. Etiam sed est sed velit finibus scelerisque. Praesent ultricies id dolor in tempor. Proin nec turpis nec arcu maximus volutpat. Mauris cursus, neque in lacinia viverra, mi dui eleifend metus, molestie ultricies augue velit sed orci. Quisque sit amet ex ligula.`,
-  },
-];
+  const BlogPosts = [
+    {
+      id: 1,
+      imageUrl: "blog1.webp",
+      date: `March 2, 2024`,
+      title: `Chaos Engineering with .NET`,
+      excerpt: `You’re about to pay your bills online, but the payment app crashes, leaving you scrambling. Or, you’re in the middle of an online shopping spree, only to be met with an error message as the e-commerce site goes down.`,
+      link: `https://medium.com/@tauraigombera/chaos-engineering-with-net-e3a194426940`,
+    },
+    {
+      id: 2,
+      imageUrl: "blog2.webp",
+      date: `July 18, 2023`,
+      title: `Simplifying Collection Initialization: A Deep Dive into C# 12’s Revolutionary Collection Literals`,
+      excerpt: `Collection literals, a new C# feature is here to revolutionize the way we handle collections. C# has often been criticized for...`,
+      link: `https://medium.com/@tauraigombera/pythonians-will-now-love-c-how-c-is-embracing-the-python-way-with-collection-literals-c7e0dad626e4`,
+    },
+    {
+      id: 3,
+      imageUrl: "blog3.webp",
+      date: `Apr 7, 2023`,
+      title: `Async/Await in C#`,
+      excerpt: `During a programming interview, I was asked about the purpose of the ‘await’ keyword in C#. I provided an answer and later attempted to verify its accuracy through online searches...`,
+      link: `https://medium.com/@tauraigombera/async-await-in-c-735509c0c579`
+    },
+  ];
 
-function Connect() {
   return (
     <>
       <Header />
-      <section className="container bg-gray mx-auto min-h-scree px-8 md:px-14 lg:px-24 w-full">
-        <h2 className="flex justify-center text-3xl text-primary font-semibold mb-8 pt-12">
+      <section className="container bg-gray mx-auto min-h-screen px-8 md:px-14 lg:px-24 w-full">
+        <h2 className="text-3xl text-center text-primary font-semibold pt-16 mb-2">
           Blog Articles
         </h2>
-        <p className="flex justify-center text-primary mb-8">
-          Read my articles
+        <p className="text-center text-primary mb-10 text-base">
+          Read my latest articles and insights
         </p>
-        <div className="grid grid-cols-1 mb-10 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Blog post component */}
-          </div>
-        </div>
-        <div className="grid bg- md:gid-cols-2 lg:grid-cols-3 gap-8 pb-12">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12">
           {BlogPosts.map((post) => (
             <div
               key={post.id}
-              className="bg-theme rounded-lg overflow-hidden shadow-md"
+              className="bg-theme rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300"
             >
-              {post.image}
+              <img
+                src={post.imageUrl}
+                alt={post.title}
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{post.title}</h3>
-                <h3 className="text-sm  mb-2">{post.date}</h3>
-                <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                <h3 className="text-xl font-semibold text-white mb-1">{post.title}</h3>
+                <p className="text-sm text-gray-200 mb-2">{post.date}</p>
+                <p className="text-gray-100 text-sm mb-4">{post.excerpt}</p>
                 <a
-                  href="#"
-                  className="text-primary-500 hover:underline font-medium"
+                  href={post.link}
+                  className="text-primary hover:underline font-medium flex items-center gap-2"
                 >
-                  Read more
+                  Read more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M1.25 8A.75.75 0 0 1 2 7.25h10.19L9.47 4.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H2A.75.75 0 0 1 1.25 8" clip-rule="evenodd"/></svg>
                 </a>
               </div>
             </div>
           ))}
         </div>
-      </section>
+      </section>  
+
+
       <Footer />
     </>
   );
 }
 
-export default Connect;
+export default Blog;
