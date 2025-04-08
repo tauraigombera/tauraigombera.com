@@ -1,32 +1,21 @@
 import MobileMenu from "./MobileMenu";
-import { useRef, useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
 
-function Navbar() {
+function Header() {
   const navItems = ["About", "Projects", "Blog", "Contact"];
-  const [selectedIndex, setSelectedIndex] = useState(-1);
   const [visibleNavbar, setVisibleNavbar] = useState(false);
-  const location = useLocation();
 
-  const navRef = useRef<HTMLButtonElement>(null);
-
+  const navRef = useRef<HTMLButtonElement | null>(null);
   const showNavbar = () => {
     navRef.current?.classList.toggle("open");
     setVisibleNavbar(!visibleNavbar);
   };
 
-  useEffect(() => {
-    const searchParams = new URLSearchParams(location.search);
-    const storedIndex = searchParams.get("selectedIndex");
-    if (storedIndex !== null) {
-      setSelectedIndex(parseInt(storedIndex));
-    }
-  }, [location.search]);
-
   return (
     <header className="bg-primary py-6 sticky top-0">
       <div className="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-        <Link to="/">
+        <NavLink to="/">
           <section className="flex gap-3">
             <div>
               <img
@@ -37,29 +26,20 @@ function Navbar() {
             </div>
             <div className="text-2xl font-medium">Taurai Gombera</div>
           </section>
-        </Link>
+        </NavLink>
 
-        <ul className="hidden md:flex space-x-12 items-centre">
-          {navItems.map((navItem, index) => (
-            <li
-              className={selectedIndex === index ? "text-selected-text" : ""}
-              key={navItem}
-              onClick={() => {
-                setSelectedIndex(index);
-              }}
-            >
-              <Link
-                to={
-                  navItem === "Home"
-                    ? "/"
-                    : `/${navItem.toLowerCase()}?selectedIndex=${index}`
-                }
+        <ul className="hidden md:flex text-grayText space-x-12 items-centre">
+          {navItems.map((navItem) => (
+            <li id="navItem" key={navItem}>
+              <NavLink
+                to={navItem === "Home" ? "/" : `/${navItem.toLowerCase()}`}
               >
                 {navItem}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
+
         <button
           ref={navRef}
           onClick={showNavbar}
@@ -76,4 +56,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Header;
