@@ -1,4 +1,4 @@
-import Navbar from "../Navbar";
+import Header from "../Header";
 import Footer from "../Footer";
 import Placeholder from "../icons/Placeholder";
 
@@ -44,7 +44,7 @@ const BlogPosts: BlogPost[] = [
 function Connect() {
   return (
     <>
-      <Navbar />
+      <Header />
       <section className="container bg-gray mx-auto min-h-scree px-8 md:px-14 lg:px-24 w-full">
         <h2 className="flex justify-center text-3xl text-primary font-semibold mb-8 pt-12">
           Blog Articles
