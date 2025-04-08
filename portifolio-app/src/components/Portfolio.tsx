@@ -1,26 +1,28 @@
 function Portfolio() {
   const projects = [
     {
-      title: "Charity Donations",
-      description:
-        "A .NET Minimal API project aims to provide a platform for facilitating online donations to charitable organizations in Malawi.",
-      imageUrl: "project.jpg",
-      demoLink: "#",
-      codeLink: "https://github.com/tauraigombera/charity-donations",
-    },
-    {
       title: "Cyberflames Website",
       description:
-        "A website build with ReactJs for a cybersecurity non-profit known as Cyberflames.",
-      imageUrl: "project2.jpg",
+        "Non profit Cybersecurity organisation based in Malawi. The website is designed to provide information about the organisation, its services, and its mission.",
+      imageUrl: "project1.jpeg",
       demoLink: "https://www.cyberflames.org/",
       codeLink: "#",
     },
+
     {
-      title: "Project 3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "project.jpg",
-      demoLink: "#",
+      title: "Crowd Funding Platform",
+      description:
+        "A .NET Minimal API project aims to provide a platform for facilitating online donations to charitable organizations in Malawi.",
+      imageUrl: "blog2.webp",
+      demoLink: "https://github.com/tauraigombera/charity-donations",
+      codeLink: "https://github.com/tauraigombera/charity-donations",
+    },
+    
+    {
+      title: "Loan Applications Processing Platform",
+      description: "A .NET web API project that provides a platform for processing loan applications for corporates.",
+      imageUrl: "blog2.webp",
+      demoLink: "https://github.com/tauraigombera/CorporateLoans.Api",
       codeLink: "#",
     },
     // Add more projects as needed
@@ -53,17 +55,10 @@ function Portfolio() {
                   href={project.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline mr-4"
+                  className="flex items-center gap-2 hover:underline mr-4"
                 >
-                  Demo
-                </a>
-                <a
-                  href={project.codeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                >
-                  Code
+                  View Project
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M1.25 8A.75.75 0 0 1 2 7.25h10.19L9.47 4.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H2A.75.75 0 0 1 1.25 8" clip-rule="evenodd"/></svg>
                 </a>
               </div>
             </div>
