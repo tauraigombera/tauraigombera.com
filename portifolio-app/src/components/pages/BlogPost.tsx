@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
 import { BlogMeta } from "../../types/blog"
 import { parseFrontmatter } from "../../utils/parseFrontmatter"
+import Header from "../Header"
+import Footer from "../Footer"
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>()
@@ -40,16 +42,20 @@ export default function BlogPost() {
   if (!meta) return <div className="p-10">Loading...</div>
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold">{meta.title}</h1>
+    <>
+      <Header />
+        <div className="max-w-3xl mx-auto px-4 py-12">
+          <h1 className="text-3xl font-bold">{meta.title}</h1>
 
-      <div className="text-gray-500 mt-2 mb-8">
-        {meta.date} • {meta.readTime}
-      </div>
+          <div className="text-gray-500 mt-2 mb-8">
+            {meta.date} • {meta.readTime}
+          </div>
 
-      <div className="prose prose-lg max-w-none">
-        <ReactMarkdown>{content}</ReactMarkdown>
-      </div>
-    </div>
+          <div className="prose prose-lg max-w-none">
+            <ReactMarkdown>{content}</ReactMarkdown>
+          </div>
+        </div>
+      <Footer />
+    </>
   )
 }
