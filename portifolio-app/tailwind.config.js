@@ -28,9 +28,10 @@ export default {
         "open-menu": "open-menu 0.5s ease-in-out forwards",
       },
       fontFamily: {
-        poppins: ["'Poppins'", "sans-serif"],
+        atkinson: ["Atkinson Hyperlegible", "sans-serif"],
       },
     },
   },
   plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
