@@ -28,7 +28,7 @@ export default {
         "open-menu": "open-menu 0.5s ease-in-out forwards",
       },
       fontFamily: {
-        poppins: ["'Poppins'", "sans-serif"],
+        atkinsonHyperlegible: ["'Atkinson Hyperlegible'", "sans-serif"],
       },
     },
   },
