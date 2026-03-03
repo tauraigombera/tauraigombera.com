@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <header className="bg-primary py-6 sticky top-0">
-      <div className="container flex justify-between items-center max-w-4xl mx-auto px-4 py-2 space-y-2">
+      <div className="container flex justify-between items-center max-w-3xl mx-auto px-4 py-2 space-y-2">
         <NavLink to="/">
           <section className="flex gap-3">
             <div>
