@@ -7,7 +7,7 @@ interface Props {
 
 function BlogCard({ post }: Props) {
   return (
-    <Link to={`/blog/${post.slug}`}>
+    <Link to={`/posts/${post.slug}`}>
       <div className="flex gap-6 group cursor-pointer">
         {/* Thumbnail */}
         <div className="w-40 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200">
