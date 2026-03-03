@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import BlogCard from "../../components/BlogCard"
 import { BlogMeta, BlogPost } from "../../types/blog"
 import { parseFrontmatter } from "../../utils/parseFrontmatter"
+import Header from "../Header"
+import Footer from "../Footer"
 
 export default function BlogList() {
   const [posts, setPosts] = useState<BlogPost[]>([])
@@ -40,10 +42,14 @@ export default function BlogList() {
   }, [])
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 space-y-12">
-      {posts.map((post) => (
-        <BlogCard key={post.slug} post={post} />
-      ))}
-    </div>
+    <>
+      <Header />
+        <div className="max-w-4xl mx-auto px-4 py-12 space-y-12">
+          {posts.map((post) => (
+            <BlogCard key={post.slug} post={post} />
+          ))}
+        </div>
+      <Footer />
+    </>
   )
 }
