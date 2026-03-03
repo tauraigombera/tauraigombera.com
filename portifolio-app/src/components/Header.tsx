@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Header() {
-  const navItems = ["About", "Projects", "Blog", "Contact"];
+  const navItems = ["Posts", "About"];
   const [visibleNavbar, setVisibleNavbar] = useState(false);
 
   const navRef = useRef<HTMLButtonElement | null>(null);
@@ -19,7 +19,7 @@ function Header() {
           <section className="flex gap-3">
             <div>
               <img
-                src="profile.jpeg"
+                src="../profile.jpeg"
                 alt="Avatar"
                 className="w-10 h-10 rounded-full"
               />
