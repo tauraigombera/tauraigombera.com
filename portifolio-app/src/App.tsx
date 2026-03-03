@@ -1,17 +1,20 @@
 import Home from "./components/pages/Home";
-import Blog from "./components/pages/Blog";
+import BlogList from "./components/pages/BlogList";
+import BlogPost from "./components/pages/BlogPost"
 import About from "./components/pages/About";
 import { Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <>
-      <body className="bg-body text-white font-poppins">
+      <div className="bg-body text-white font-poppins">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Blog" element={<Blog />} />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/About" element={<About />} />
         </Routes>
-      </body>
+      </div>
     </>
   );
 }
