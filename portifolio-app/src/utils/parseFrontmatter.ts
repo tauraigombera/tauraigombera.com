@@ -3,10 +3,13 @@ export interface ParsedMarkdown<T> {
   content: string
 }
 
-export function parseFrontmatter<T = any>(
+export function parseFrontmatter<T>(
   file: string
 ): ParsedMarkdown<T> {
-  const match = file.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
+  const frontmatterRegex =
+    /^---\s*[\r\n]+([\s\S]*?)[\r\n]+---\s*[\r\n]+([\s\S]*)/
+
+  const match = file.match(frontmatterRegex)
 
   if (!match) {
     return {
@@ -15,16 +18,26 @@ export function parseFrontmatter<T = any>(
     }
   }
 
-  const frontmatter = match[1]
-  const content = match[2]
+  const [, rawFrontmatter, content] = match
 
-  const data = frontmatter
-    .split("\n")
-    .reduce((acc: any, line) => {
-      const [key, ...rest] = line.split(":")
-      acc[key.trim()] = rest.join(":").trim().replace(/^"|"$/g, "")
+  const data = rawFrontmatter
+    .split(/\r?\n/)
+    .reduce<Record<string, string>>((acc, line) => {
+      const separatorIndex = line.indexOf(":")
+      if (separatorIndex === -1) return acc
+
+      const key = line.slice(0, separatorIndex).trim()
+      const value = line
+        .slice(separatorIndex + 1)
+        .trim()
+        .replace(/^"|"$/g, "")
+
+      acc[key] = value
       return acc
     }, {})
 
-  return { data: data as T, content }
+  return {
+    data: data as T,
+    content,
+  }
 }
