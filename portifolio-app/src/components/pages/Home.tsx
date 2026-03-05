@@ -1,13 +1,13 @@
 import Header from "../Header";
 import Hero from "../Hero";
 import Footer from "../Footer";
-import Portfolio from "../Portfolio";
+import BlogList from "../BlogList";
 function Home() {
   return (
     <div>
       <Header />
       <Hero />
-      <Portfolio />
+      <BlogList />
       <Footer />
     </div>
   );
