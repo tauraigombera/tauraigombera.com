@@ -1,6 +1,7 @@
 import MobileMenu from "./MobileMenu";
 import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
+import Devider from "./Devider";
 
 function Header() {
   const navItems = ["Posts", "About"];
@@ -13,18 +14,12 @@ function Header() {
   };
 
   return (
-    <header className="bg-primary py-6 sticky top-0">
+    <>
+      <header className="py-6">
       <div className="container flex justify-between items-center max-w-3xl mx-auto px-4 py-2 space-y-2">
         <NavLink to="/">
           <section className="flex gap-3">
-            <div>
-              <img
-                src="../profile.jpeg"
-                alt="Avatar"
-                className="w-10 h-10 rounded-full"
-              />
-            </div>
-            <div className="text-2xl font-medium">Taurai Gombera</div>
+            <div className="text-2xl font-bold">Taurai Gombera</div>
           </section>
         </NavLink>
 
@@ -53,6 +48,8 @@ function Header() {
       {/* Mobile Menu */}
       {visibleNavbar && <MobileMenu />}
     </header>
+    <Devider />
+    </>
   );
 }
 
