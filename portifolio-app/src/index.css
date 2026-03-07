@@ -109,5 +109,6 @@ p.text-base {
   }
 }
 #navItem a.active {
-  color: #4f46e5;
+  /* color: #4f46e5; */
+  color: #0d6da2;
 }
