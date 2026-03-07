@@ -4,15 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        body: "#111827",
-        primary: "#030712",
-        "selected-text": "#A3A3FF",
-        theme: "#4f46e5",
+        "selected-text": "#0d6da2",
+        theme: "#0d6da2",
         gray: "#e5e7eb",
-        nav: "#404053",
-        secondary: "#9191A4",
-        "input-border": "#565666",
-        input: "#2A2A35",
+        mytext: "#575757",
+        /* old theme color: #4f46e5; */
       },
       screens: {
         tallscreen: { raw: "(min-aspect-ration: 13/20)" },
