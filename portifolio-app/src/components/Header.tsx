@@ -23,7 +23,7 @@ function Header() {
           </section>
         </NavLink>
 
-        <ul className="hidden md:flex text-grayText space-x-12 items-centre">
+        <ul className="hidden md:flex space-x-12 items-centre">
           {navItems.map((navItem) => (
             <li id="navItem" key={navItem}>
               <NavLink
