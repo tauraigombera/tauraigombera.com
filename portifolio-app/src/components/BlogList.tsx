@@ -40,12 +40,10 @@ export default function BlogList() {
   }, [])
 
   return (
-    <div className="bg-gray text-primary min-h-screen">
       <div className="max-w-3xl mx-auto px-4 py-12 space-y-12">
         {posts.map((post) => (
           <BlogCard key={post.slug} post={post} />
         ))}
       </div>
-    </div>
   )
 }
