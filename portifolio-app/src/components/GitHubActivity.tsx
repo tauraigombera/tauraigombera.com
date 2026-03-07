@@ -13,5 +13,4 @@ function GitHubActivity() {
     </div>
   )
 }
-
 export default GitHubActivity
