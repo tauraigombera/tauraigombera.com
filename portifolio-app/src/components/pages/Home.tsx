@@ -1,19 +1,15 @@
 import Header from "../Header";
 import Hero from "../Hero";
-import Skills from "../Skills";
 import Footer from "../Footer";
-import Portfolio from "../Portfolio";
-import Connect from "../Connect";
+import BlogList from "../BlogList";
 function Home() {
   return (
-    <div>
+    <>
       <Header />
       <Hero />
-      <Skills />
-      <Portfolio />
-      <Connect />
+      <BlogList />
       <Footer />
-    </div>
+    </>
   );
 }
 
