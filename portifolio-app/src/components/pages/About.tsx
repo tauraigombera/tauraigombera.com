@@ -2,6 +2,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import GitHubActivity from "../GitHubActivity";
 import SocialLinks from "../SocialLinks";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -37,6 +38,12 @@ function About() {
             I manage and develop digital services that enhance customer experience. I write about digital 
             transformation, financial technology, human interface design, and software engineering. 
             I mentor young people interested in learning and persuing careers in tech.
+          </p>
+
+          <p className="italic mb-12">
+            <Link to="/posts" className="text-theme hover:underline">
+              Read my latest posts
+            </Link>
           </p>
 
           {/* GitHub Section */}
