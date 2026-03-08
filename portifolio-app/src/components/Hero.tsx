@@ -22,14 +22,17 @@ export default function HeroSection() {
 
             {/* Bio Section */}
             <div className="flex flex-col gap-3 pt-1 min-w-0 text-center md:text-left">
-              <h1 className="font-bold text-2xl text-gray-900 tracking-tight leading-none">
+              <h1 className="font-bold text-2xl">
                 Hi, I'm Taurai Gombera.
               </h1>
 
-              <p className="font-mono text-sm text-gray-700 leading-relaxed">
-                Exploring how financial technology can make people's lives better.
-                <br />
-                I am continuously building software &amp; sharing what I learn.
+               {/* Tagline */}
+              <p className="italic">
+                Digital Transformation | Financial Technology | Human Interface Design | Software Engineering | Learning & Sharing
+              </p>
+
+              <p>
+                Making people's lives better through digital transformation.
               </p>
 
               {/* Social Icons */}
