@@ -23,7 +23,7 @@ function About() {
 
           {/* Tagline */}
           <p className="italic md:text-base mb-6">
-            Digital Transformation | Software Engineering | Human Interface Design | Learning & Sharing
+            Digital Transformation | Financial Technology | Human Interface Design | Software Engineering | Learning & Sharing
           </p>
 
           {/* Social Links */}
@@ -33,10 +33,10 @@ function About() {
 
           {/* About Text */}
           <p className="text-lg md:text-xl leading-relaxed mb-12">
-            I’m <span className="font-semibold">Taurai Gombera</span>, a results-driven
-            Software Developer focused on building scalable and intuitive digital
-            products. I specialize in <span className="font-medium">.NET development</span>{" "}
-            and enjoy crafting software that solves real-world.
+            I’m <span className="font-semibold">Taurai Gombera</span>, a Digital Banking Professional and Software Developer. 
+            I manage and develop digital services that enhance customer experience. I write about digital 
+            transformation, financial technology, human interface design, and software engineering. 
+            I mentor young people interested in learning and persuing careers in tech.
           </p>
 
           {/* GitHub Section */}
