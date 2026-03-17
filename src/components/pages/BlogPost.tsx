@@ -3,8 +3,6 @@ import { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
 import { BlogMeta } from "../../types/blog"
 import { parseFrontmatter } from "../../utils/parseFrontmatter"
-import Header from "../Header"
-import Footer from "../Footer"
 import { dateFormatter } from "../../utils/dateFormatter"
 import { Calendar, ChevronUp } from "lucide-react"
 
@@ -115,7 +113,6 @@ export default function BlogPost() {
 
   return (
     <>
-      <Header />
       <div className="max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold text-theme">{meta.title}</h1>
 
@@ -168,7 +165,6 @@ export default function BlogPost() {
           </button>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

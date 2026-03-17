@@ -1,5 +1,3 @@
-import Header from "../Header";
-import Footer from "../Footer";
 import GitHubActivity from "../GitHubActivity";
 import SocialLinks from "../SocialLinks";
 import { Link } from "react-router-dom";
@@ -7,8 +5,6 @@ import { Link } from "react-router-dom";
 function About() {
   return (
     <>
-      <Header />
-
       <section
         id="about"
         className="bg-gray flex flex-col items-center mt-12 px-6 md:px-12 lg:px-24 text-center"
@@ -53,8 +49,6 @@ function About() {
 
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

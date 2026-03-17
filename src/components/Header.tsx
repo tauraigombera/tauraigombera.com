@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <>
-      <header className="py-6">
+    <header className="py-6">
       <div className="container flex justify-between items-center max-w-3xl mx-auto px-4 py-2 space-y-2">
         <NavLink to="/">
           <section className="flex gap-3">
@@ -47,8 +47,8 @@ function Header() {
       </div>
       {/* Mobile Menu */}
       {visibleNavbar && <MobileMenu />}
-    </header>
     <Devider />
+    </header>
     </>
   );
 }

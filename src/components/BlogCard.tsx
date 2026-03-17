@@ -11,7 +11,7 @@ function BlogCard({ post }: Props) {
   return (
     <div className="flex gap-4 sm:gap-6 group py-3">
       <Link to={`/posts/${post.slug}`} className="hidden sm:block">
-        <div className="w-40 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 cursor-pointer">
+        <div className="w-40 h-40 mt-4 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 cursor-pointer">
           <img
             src={post.image}
             alt={post.title}
