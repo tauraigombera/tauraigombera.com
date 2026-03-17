@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
 export default function HeroSection() {
   return (
     <>
-      <div className="flex justify-center max-w-3xl mx-auto px-4 mt-4 mb-4">
+      <div className="flex justify-center max-w-3xl mx-auto px-4 mt-8 mb-8">
         <div className="w-full max-w-3xl">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
 
@@ -27,12 +27,12 @@ export default function HeroSection() {
               </h1>
 
                {/* Tagline */}
-              <p className="italic">
+              <p className="italic text-gray-600 text-sm sm:text-base">
                 Digital Transformation | Financial Technology | Human Interface Design | Software Engineering | Learning & Sharing
               </p>
 
               <p>
-                Making people's lives better through digital transformation.
+                Making people's lives a little easier through digital transformation.
               </p>
 
               {/* Social Icons */}
