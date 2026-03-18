@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
+    "postbuild": "npm run generate-routes && react-snap",
     "generate-routes": "node scripts/generate-routes.js",
-    "postbuild": "npm run generate-routes && react-snap"
+    "build": "npm run generate-routes && vite build && react-snap",
+    "preview": "vite preview"
   },
   "reactSnap": {
-    "inlineCss": true
+    "inlineCss": true,
+    "source": "dist"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
