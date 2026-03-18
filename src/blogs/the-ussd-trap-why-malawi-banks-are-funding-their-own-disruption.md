@@ -3,9 +3,11 @@ title: The USSD Trap: Why Malawi Banks Are Funding Their Own Disruption
 date: 2026-03-17
 readTime: 5 min read
 excerpt: Back in the day, USSD was a hero of financial inclusion. Back then, it made perfect sense because networks were slow, most people had feature phones, smartphones were expensive, and mobile data was something you thought twice about buying.
-image: /ussd.jpg
+image: /burn-the-ussd.png
 ---
 
+![Smartphone usage in Africa](/burn-the-ussd.png)
+    
 Back in the day, USSD was a hero of financial inclusion. Back then, it made perfect sense because networks were slow, most people had feature phones, smartphones were expensive, and mobile data was something you thought twice about buying. In those days, dialling *xyz#, entering a PIN, and sending money felt revolutionary. It enabled banks and mobile money providers to reach individuals who had never previously interacted with the formal financial system.
 
 But that was more than a decade ago. Today, the reality in Malawi is very different. People in Malawi have smartphones, are on WhatsApp, watch live parliamentary enquiries on Facebook, and scroll TikTok for hours. They share voice notes, pictures, and videos every single day. Even someone selling tomatoes at Lizulu market in Lilongwe is receiving photos of orders on WhatsApp from farmers in remote areas. The network is not 2G  but 4G and 5G. In other words, people are already living in the internet economy.
