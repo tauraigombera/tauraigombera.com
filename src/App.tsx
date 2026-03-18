@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-gray text-mytext font-atkinson font-mono min-h-screen flex flex-col">
+    <div className="bg-gray text-mytext font-atkinson font-mono min-h-screen flex flex-col sm:mx-auto px-2">
       <Header />
 
       <main className="flex-1">
