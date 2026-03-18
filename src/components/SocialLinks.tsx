@@ -1,7 +1,7 @@
 function SocialLinks() {
   return (
     <div>
-      <ul className="flex flex-wrap items-center mt-3 gap-6 text-sm font-medium text-gray-500 sm:mt-0">
+      <ul className="flex flex-wrap items-center gap-6 text-sm font-medium text-gray-500 sm:mt-0">
 
         {/* GitHub */}
         <li>
