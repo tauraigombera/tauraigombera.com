@@ -1,0 +1,12 @@
+[build]
+  command = "tsc && vite build"
+  publish = "dist"
+
+[[edge_functions]]
+  function = "og-inject"
+  path = "/posts/*"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
