@@ -46,7 +46,7 @@ function Header() {
         </button>
       </div>
       {/* Mobile Menu */}
-      {visibleNavbar && <MobileMenu />}
+      {visibleNavbar && <MobileMenu onClose={showNavbar} />}
     <Devider />
     </header>
     </>

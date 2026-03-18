@@ -1,26 +1,27 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const MobileMenu = () => {
-  const navItems = ["About", "Posts"];
+type MobileMenuProps = {
+  onClose: () => void;
+};
+
+function MobileMenu({ onClose }: MobileMenuProps) {
+  const navItems = ["Posts", "About"];
 
   return (
-    <nav>
-      <ul className="absolute pt-8 bg-gray w-full text-3xl min-h-screen flex flex-col items-center origin-top animate-open-menu md:hidden">
-     
-          {navItems.map((navItem) => (
-            <li className="py-8 hover:text-gray" id="navItem" key={navItem}>
-              <Link
-                to={navItem === "Home" ? "/" : `/${navItem.toLowerCase()}`}
-              >
-                {navItem}
-              </Link>
-            </li>
-          ))}
-       
-      </ul>
-    </nav>
+    <ul className="absolute pt-8 bg-gray w-full text-3xl min-h-screen flex flex-col items-center origin-top animate-open-menu md:hidden">
+      {navItems.map((navItem) => (
+        <li className="py-4 hover:text-theme" key={navItem}>
+          <NavLink
+            to={navItem === "Home" ? "/" : `/${navItem.toLowerCase()}`}
+            onClick={onClose}
+          >
+            {navItem}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
   );
-};
+}
 
 export default MobileMenu;
 
