@@ -5,6 +5,7 @@ import { BlogMeta } from "../../types/blog"
 import { parseFrontmatter } from "../../utils/parseFrontmatter"
 import { dateFormatter } from "../../utils/dateFormatter"
 import { Calendar, ChevronUp } from "lucide-react"
+import { Helmet } from "react-helmet-async";
 
 type BlogEntry = { slug: string; meta: BlogMeta }
 
@@ -113,6 +114,21 @@ export default function BlogPost() {
 
   return (
     <>
+
+      <Helmet>
+        <title>{meta.title}</title>
+        <meta name="excerpt" content={meta.excerpt} />
+
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:excerpt" content={meta.excerpt} />
+        <meta property="og:image" content={meta.image} />
+        <meta
+          property="og:url"
+          content={`https://www.tauraigombera.com/posts/${slug ?? ""}`}
+        />
+        <meta property="og:type" content="article" />
+      </Helmet>
+
       <div className="max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold text-theme">{meta.title}</h1>
 
