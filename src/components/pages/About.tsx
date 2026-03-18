@@ -19,7 +19,7 @@ function About() {
           />
 
           {/* Tagline */}
-          <p className="italic md:text-base mb-6">
+          <p className="italic text-sm space-x-1 mb-6">
             Digital Transformation | Financial Technology | Human Interface Design | Software Engineering | Learning & Sharing
           </p>
 
