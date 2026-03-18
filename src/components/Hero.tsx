@@ -27,7 +27,7 @@ export default function HeroSection() {
               </h1>
 
                {/* Tagline */}
-              <p className="italic text-gray-600 text-sm sm:text-base">
+              <p className="italic text-gray-600">
                 Digital Transformation | Financial Technology | Human Interface Design | Software Engineering | Learning & Sharing
               </p>
 

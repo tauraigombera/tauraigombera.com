@@ -23,7 +23,7 @@ function BlogCard({ post }: Props) {
       <div className="flex flex-col justify-between">
         <div>
           <Link to={`/posts/${post.slug}`}>
-            <h2 className="text-lg sm:text-xl font-semibold text-theme hover:underline cursor-pointer">
+            <h2 className="text-2xl font-bold text-theme hover:underline cursor-pointer">
               {post.title}
             </h2>
           </Link>
@@ -37,7 +37,7 @@ function BlogCard({ post }: Props) {
             <span>{post.readTime}</span>
           </div>
 
-          <p className="mt-2 sm:mt-3 text-gray-600 leading-relaxed text-sm sm:text-base">
+          <p className="mt-2 sm:mt-3">
             {post.excerpt}
           </p>
         </div>
