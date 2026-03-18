@@ -3,8 +3,6 @@ import { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
 import { BlogMeta } from "../../types/blog"
 import { parseFrontmatter } from "../../utils/parseFrontmatter"
-import Header from "../Header"
-import Footer from "../Footer"
 import { dateFormatter } from "../../utils/dateFormatter"
 import { Calendar, ChevronUp } from "lucide-react"
 
