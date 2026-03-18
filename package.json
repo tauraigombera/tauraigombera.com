@@ -12,8 +12,7 @@
     "postbuild": "npm run generate-routes && react-snap"
   },
   "reactSnap": {
-    "inlineCss": true,
-    "include": "./routes.json"
+    "inlineCss": true
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",

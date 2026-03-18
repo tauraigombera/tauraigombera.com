@@ -1,7 +1,10 @@
-import { readdirSync } from "fs";
-import { writeFileSync } from "fs";
+import { readdirSync, readFileSync, writeFileSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
 
-const files = readdirSync("./src/blogs");
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const files = readdirSync(join(__dirname, "../src/blogs"));
 
 const routes = files
   .filter((f) => f.endsWith(".md"))
@@ -9,9 +12,12 @@ const routes = files
 
 const all = ["/", "/posts", "/about", ...routes];
 
-writeFileSync(
-  "./routes.json",
-  JSON.stringify(all, null, 2)
-);
+const pkgPath = join(__dirname, "../package.json");
+const pkg = JSON.parse(readFileSync(pkgPath, "utf8"));
+
+pkg.reactSnap = pkg.reactSnap || {};
+pkg.reactSnap.include = all;
+
+writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
 
 console.log("Generated routes:", all);
