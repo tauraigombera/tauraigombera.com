@@ -26,7 +26,7 @@ By the way, banks would only be able to compete with MNOs in this market if they
 
 ### 2. The Platform Tax
 
-For banks, USSD is simply a rental platform. Banks are building their digital strategy on infrastructure that is ultimately controlled by MNOs. Every USSD session runs through a Mobile Network Operator (MNO). That means banks are continuously paying fees to provide fundamental services. ****Instead of investing that money in better mobile apps, APIs, and better digital ecosystems, banks spend millions maintaining and adding features to a technology that cannot evolve. Over time, this becomes a “Legacy Tax.”
+For banks, USSD is simply a rental platform. Banks are building their digital strategy on infrastructure that is ultimately controlled by MNOs. Every USSD session runs through a Mobile Network Operator (MNO). That means banks are continuously paying fees to provide fundamental services. Instead of investing that money in better mobile apps, APIs, and better digital ecosystems, banks spend millions maintaining and adding features to a technology that cannot evolve. Over time, this becomes a “Legacy Tax.”
 
 Additionally, banks have limited control over the reliability of USSD platforms. This scenario, where your bank's *xyz# service is abruptly inaccessible, and the MNO cites "technical issues," yet their own mobile money shortcode continues to function perfectly, is familiar to anyone who has worked in the digital banking industry. The truth is that banks are funding infrastructure they have no complete control over, even though this may not be their objective.
 
