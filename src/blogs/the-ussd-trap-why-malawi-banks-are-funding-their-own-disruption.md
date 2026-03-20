@@ -1,6 +1,6 @@
 ---
 title: The USSD Trap: Why Malawi Banks Are Funding Their Own Disruption
-date: 2026-03-17
+date: 2026-03-20
 readTime: 5 min read
 excerpt: Back in the day, USSD was a hero of financial inclusion. Back then, it made perfect sense because networks were slow, most people had feature phones, smartphones were expensive, and mobile data was something you thought twice about buying.
 image: /burn-the-ussd.png
@@ -8,36 +8,64 @@ image: /burn-the-ussd.png
 
 ![Smartphone usage in Africa](/burn-the-ussd.png)
     
-Back in the day, USSD was a hero of financial inclusion. Back then, it made perfect sense because networks were slow, most people had feature phones, smartphones were expensive, and mobile data was something you thought twice about buying. In those days, dialling *xyz#, entering a PIN, and sending money felt revolutionary. It enabled banks and mobile money providers to reach individuals who had never previously interacted with the formal financial system.
+Back in the day, USSD was a hero of financial inclusion. Back then, it made perfect sense because networks were slower, most people had feature phones, smartphones were expensive, and mobile data was something you thought twice about buying. In those days, dialling shortcodes (*xyz#), entering a PIN, and sending money that credits the recipient instantly felt revolutionary. It enabled banks and mobile money providers to reach individuals who had never previously interacted with the formal financial system.
 
-But that was more than a decade ago. Today, the reality in Malawi is very different. People in Malawi have smartphones, are on WhatsApp, watch live parliamentary enquiries on Facebook, and scroll TikTok for hours. They share voice notes, pictures, and videos every single day. Even someone selling tomatoes at Lizulu market in Lilongwe is receiving photos of orders on WhatsApp from farmers in remote areas. The network is not 2G  but 4G and 5G. In other words, people are already living in the internet economy.
+However, that was more than a decade ago. Today, the reality in Malawi is very different. Today, people in Malawi have smartphones, are on WhatsApp, watch live parliamentary inquiries on Facebook, and scroll TikTok for hours. They share voice notes, pictures, and videos every single day. Even someone selling tomatoes at Lizulu market in Lilongwe is receiving photos of orders on WhatsApp from farmers in remote areas. The network is not 2G  but 4G and 5G. People are already living in the internet economy. Meanwhile, the rest of the world is building AI-driven financial systems.
 
-And yet, many banks in Malawi still treat USSD as the centre of their digital strategy. Almost every bank is known by the USSD shortcode that they use. Digitalisation is discussed in almost every boardroom meeting in Blantyre and Lilongwe. But there is probably no Digital Strategy document that boldly says, “Our goal is to replace USSD with a robust app-based platform by 2028.” Instead, many institutions still celebrate growing USSD transaction volumes as a sign of digital success. If your senior executives are still bragging about USSD transaction volumes, you are not leading the market. You are simply managing and funding your own disruption, and here is why.
+And yet, many banks in Malawi still treat USSD as the centre of their digital strategy. Almost every bank is recognized by the USSD shortcode it uses. Digitalisation is discussed in almost every boardroom meeting in Blantyre and Lilongwe. But there is probably no Digital Strategy document that boldly says, “Our goal is to replace USSD with a robust app-based platform by 2028.” Instead, many institutions still celebrate growing USSD transaction volumes as a sign of digital success. If your senior executives are still bragging about USSD transaction volumes, you are not leading the market. You are simply managing and funding your own disruption, and here is why.
 
-### 1. The Platform Tax
+### 1. The Feature Phones Illusion
 
-For banks, USSD is essentially a rental platform. Banks are building their digital strategy on infrastructure that is ultimately controlled by MNOs. Every USSD session runs through a Mobile Network Operator (MNO). That means banks are constantly paying fees just to provide basic functionality. ****Instead of investing that money in better mobile apps, APIs, and better digital ecosystems, banks spend millions maintaining and adding features to a technology that cannot evolve. Over time, this becomes a “Legacy Tax.”
+I know the argument is always like, “but the majority of the population in Malawi use feature phones, and that's why we invest in USSD.” Fair enough. However, when you come to think of it, how much of that population actually has bank accounts? You will discover that a large portion of that population is on mobile money because the KYC for MNOs is simpler, the onboarding is faster, and, for the level of income they earn, a bank account is often not necessary. MNOs have effectively captured that market.
 
-Furthermore, banks cannot fully control the reliability of USSD platforms. Anyone who has worked in digital banking space has seen this situation before where your bank’s *xyz# service is suddenly unavailable and the MNO reports “technical issues,” while their own mobile money shortcode continues to run normally. In as much as that may not be intentional, the reality is that banks are paying for infrastructure that they cannot fully control.
+For banks, the working class and SMEs are the true target market, not the vast majority of people who own feature phones. Although it is a smaller market, it is the one with a consistent and obvious need for banking due to salaries, cash flow management, trade, credit, and payments. Actually, the majority of these clients already own cellphones.
 
-### 2. You cannot sell a Text String
+So the billion-dollar question is, should banks stretch themselves trying to compete with MNOs for customers who, structurally, are a better fit for mobile money? Or should banks focus on delivering stronger, more reliable, and more valuable services to the customers who already have a clear reason to have bank accounts? At the end of the day, chasing volumes in the wrong customer segment can come at the cost of serving the bank's core customers well. 
 
-Modern digital banking is no longer just about transactions alone. It is about making sales using context and data with the help of AI that tells the bank:
+By the way, banks would only be able to compete with MNOs in this market if they had their own wallets and streamlined the onboarding process to make it easier and faster. However, few banks have already experimented with wallets, but their results have not been satisfactory. Some have ultimately closed as a result. Banks have a limited agency network because they have not made the same investments as MNOs, which is why Wallets do not function well for banks. This is because most people who use feature phones also use cash daily and must withdraw money from their wallets to use it.
 
-“Mr. Bengo just received a large transfer today and he usually buys construction materials every Monday. Earlier today, he reviewed credit facilities for cement in the bank's app. Offer him a 24 hour credit line for cement right now”
+### 2. The Platform Tax
 
-Apps allow institutions to understand customer behaviour, such as which services customers use most, where they struggle in the journey, when they may need credit, and how to personalise offers. USSD provides almost none of this insight. A USSD interaction is essentially a temporary text session that disappears as soon as the transaction is complete. There is no meaningful behavioural data, no user analytics, and no opportunity to guide the customer journey.
+For banks, USSD is simply a rental platform. Banks are building their digital strategy on infrastructure that is ultimately controlled by MNOs. Every USSD session runs through a Mobile Network Operator (MNO). That means banks are continuously paying fees to provide fundamental services. ****Instead of investing that money in better mobile apps, APIs, and better digital ecosystems, banks spend millions maintaining and adding features to a technology that cannot evolve. Over time, this becomes a “Legacy Tax.”
 
-### 3. USSD is Becoming a Security Liability
+Additionally, banks have limited control over the reliability of USSD platforms. This scenario, where your bank's *xyz# service is abruptly inaccessible, and the MNO cites "technical issues," yet their own mobile money shortcode continues to function perfectly, is familiar to anyone who has worked in the digital banking industry. The truth is that banks are funding infrastructure they have no complete control over, even though this may not be their objective.
 
-From a security point of view, USSD was never designed to handle the level of financial activity it now supports, such as lending. Most USSD interactions rely on simple PIN authentication. Messages often travel through the network in ways that are far less secure than modern app-based encryption. At the same time, regulators are tightening expectations around cybersecurity. In Malawi, institutions must now consider frameworks such as RBM guidelines on Cybersecurity and IT systems, the Electronic Transactions and Cybersecurity Act, and the Data Protection Act. These frameworks place responsibility on institutions to ensure their digital channels are secure by design. If a digital channel is weak by design, the liability ultimately sits with the financial institution offering the service. USSD may have been acceptable a decade ago, but in a modern regulatory environment, it is becoming harder to justify as a primary digital banking channel. Many customers of various banks have already been victims of SIM swap fraud, and their stories are everywhere on social media. Banks need to be extra careful as they are adding critical features on USSD because a single major breach on the USSD string may not only cost money, but it may also cost the operating license.
+### 3. You cannot sell a Text String
 
-### 4. Even MNOs Are Moving Beyond USSD
+Modern digital banking is no longer just about transactions alone. Modern banking is data-driven and is about using contextual data to make profitable business decisions. The banks need to invest in intelligent systems that think like this:
 
-Ironically, the companies that benefited most from USSD are already moving beyond it. MNOs understand that the real future of telecommunications is data. 4G and 5G networks are built for high-bandwidth services, mobile apps, and digital ecosystems. That is where the real revenue growth lies. That is why MNOs are taking serious steps to invest in their own mobile applications and digital platforms. The transition is already visible when you open mobile money apps. The apps are now almost like super-app ecosystems where you can do any kind of payment. In other words, the companies that built the USSD infrastructure are themselves preparing for an exit. However, bank customers are still dialing the shortcodes even when they have smartphones.
+“Mr. Bengo just received a large transfer today, and he usually buys construction materials every Monday. Earlier today, he reviewed credit facilities for cement in the bank's app. Offer him a 24-hour credit line for cement right now.”
+
+That is what modern banking looks like. 
+
+Apps allow financial institutions to understand customer behaviour, such as which services customers use most, where they struggle in the journey, when they may need credit, and how to personalise offers. USSD provides almost none of this insight. A USSD interaction is simply a temporary text session that disappears as soon as the transaction is complete. There is no meaningful behavioural data, no user analytics, and no opportunity to guide the customer journey.
+
+### 4. USSD is Becoming a Security Liability
+
+USSD was never designed to handle the level of financial activity it now supports, such as lending, overdrafts, investments, and insurance. Most USSD interactions rely on simple PIN authentication. Messages often travel through the network in ways that are far less secure than modern app-based encryption. 
+
+At the same time, regulators are tightening expectations around cybersecurity. Institutions in Malawi are now required to take into account frameworks including the Data Protection Act, the Electronic Transactions and Cybersecurity Act, and RBM guidelines on cybersecurity and IT systems. These frameworks place responsibility on institutions to ensure their digital channels are secure by design. If a digital channel is weak by design, the liability ultimately sits with the financial institution offering the service. 
+
+USSD may have been acceptable a decade ago, but in a modern regulatory environment, it is becoming harder to justify as a primary digital banking channel. Many customers of various banks have already been victims of SIM swap fraud, and their stories are everywhere on social media. When adding essential services to USSD, banks must exercise particular caution because a single major breach on the USSD string may not only cost money, but it can also cost the operating license.
+
+### 5. Even MNOs Are Moving Beyond USSD
+
+Ironically, the companies that benefit the most from USSD are already moving beyond it. MNOs understand that the real future of telecommunications is data. 4G and 5G networks are built for high-bandwidth services, mobile apps, and digital ecosystems. That is where the real revenue and their growth lies. 
+
+MNOs are taking serious steps to invest in their own mobile applications and digital platforms. The transition is already visible when you open mobile money apps. It is easier and quicker to make a transfer, make a payment, or withdraw cash using an MNO app than it is to use most banks’ apps. Furthermore, MNO apps are now almost like super-app ecosystems where you can do almost anything at your convenience. 
+
+In other words, the companies that built the USSD infrastructure are themselves preparing for an exit, while bank customers continue to dial the shortcodes even when they have smartphones. In fact, if you open a bank account with most banks today and request a mobile banking platform, they will sell you USSD until you ask for an app. They only sell apps as alternatives.
+
+### 6. Fintechs are coming for you
+
+While banks are holding onto USSD, fintechs have already made their move. In recent years, the Reserve Bank of Malawi (RBM) has granted licences to a number of fintechs. These fintechs are deliberate; they are building for the same clients that banks should be obsessed with, the working class and SMEs. And they are doing it better. Fintechs are building mobile-first experiences, clean apps, and fast onboarding. With smart use of data, they understand customer behavior. They are not constrained by legacy systems, internal bureaucracy, or outdated channels like USSD. 
+
+So while banks are stretching themselves trying to win the feature phone market where MNOs already dominate with their wallets, fintechs are quietly taking over the high-value clients. The clients who actually matter. The ones with smartphones and a 5G network on their fingertips. The ones with income and need credit, payments, and financial tools to run their lives and businesses. Fintechs do not need to replace banks overnight. They just need to own the customer experience. Once they do that, the banks become invisible, just a utility in the background.
 
 ### Pivot or Perish
 
-There is no denying that USSD played an important role in financial inclusion. But by keeping the economy on USSD, banks are slowing down innovation. USSD was meant to be a bridge, not the destination. In 2026, the “unbanked” population is no longer “un-smartphoned.” Smartphones are spreading rapidly, even in rural areas. Continuing to treat USSD as the centre of a digital banking strategy is like trying to build a faster horse in the age of the jet engine.
+There is no denying that USSD played an important role in financial inclusion. However, by keeping the economy on USSD, banks are slowing down financial innovation. USSD was meant to be a bridge and not the destination. In 2026, the “unbanked” population is no longer “un-smartphoned.” Smartphones are spreading rapidly, even in rural areas. Continuing to treat USSD as the centre of a digital banking strategy is like trying to build a faster horse in the age of jet engines.
 
-What the banks need to do is to invest in lightweight mobile and web applications and build secure, data-driven platforms. They need to create digital ecosystems that go beyond basic transactions. USSD should support the transition but not define it. If Malawi banks continue to tailor their digital strategies on *xyz#, they may eventually realise too late that they were quietly funding their own disruption.
+What the banks need to do right now is to invest in lightweight mobile and web applications and build secure, data-driven platforms. Banks need to create digital ecosystems that go beyond basic transactions. Apps should be the primary focus for crucial services such as lending, investments, and insurance, not USSD. USSD should not define the change, but it should support it.
+
+If Malawi banks continue to tailor their digital strategies on shortcodes (*xyz#), they may eventually realize, when it's too late, that they were quietly funding their own disruption.
