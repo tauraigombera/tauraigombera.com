@@ -1,63 +1,65 @@
-import { useParams, Link } from "react-router-dom"
-import { useEffect, useState } from "react"
-import ReactMarkdown from "react-markdown"
-import { BlogMeta } from "../../types/blog"
-import { parseFrontmatter } from "../../utils/parseFrontmatter"
-import { dateFormatter } from "../../utils/dateFormatter"
-import { Calendar, ChevronUp } from "lucide-react"
+import { useParams, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import { BlogMeta } from "../../types/blog";
+import { parseFrontmatter } from "../../utils/parseFrontmatter";
+import { dateFormatter } from "../../utils/dateFormatter";
+import { Calendar, ChevronUp } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
-type BlogEntry = { slug: string; meta: BlogMeta }
+type BlogEntry = { slug: string; meta: BlogMeta };
 
 export default function BlogPost() {
-  const { slug } = useParams<{ slug: string }>()
-  const [content, setContent] = useState<string>("")
-  const [meta, setMeta] = useState<BlogMeta | null>(null)
-  const [allPosts, setAllPosts] = useState<BlogEntry[]>([])
+  const { slug } = useParams<{ slug: string }>();
+  const [content, setContent] = useState<string>("");
+  const [meta, setMeta] = useState<BlogMeta | null>(null);
+  const [allPosts, setAllPosts] = useState<BlogEntry[]>([]);
 
   useEffect(() => {
     const files = import.meta.glob("/src/blogs/*.md", {
       query: "?raw",
       import: "default",
-    })
+    });
 
     async function loadPost() {
-      if (!slug) return
+      if (!slug) return;
 
       const match = Object.entries(files).find(([path]) =>
-        path.endsWith(`${slug}.md`)
-      )
+        path.endsWith(`${slug}.md`),
+      );
 
-      if (!match) return
+      if (!match) return;
 
-      const resolver = match[1] as () => Promise<string>
-      const fileContent = await resolver()
-      const { data, content } = parseFrontmatter<BlogMeta>(fileContent)
-      setMeta(data)
-      setContent(content)
+      const resolver = match[1] as () => Promise<string>;
+      const fileContent = await resolver();
+      const { data, content } = parseFrontmatter<BlogMeta>(fileContent);
+      setMeta(data);
+      setContent(content);
     }
 
     async function loadAllPosts() {
-      const entries: BlogEntry[] = []
+      const entries: BlogEntry[] = [];
       for (const [path, resolver] of Object.entries(files)) {
-        const fileContent = await (resolver as () => Promise<string>)()
-        const { data } = parseFrontmatter<BlogMeta>(fileContent)
-        const postSlug = path.split("/").pop()?.replace(".md", "") ?? ""
-        entries.push({ slug: postSlug, meta: data })
+        const fileContent = await (resolver as () => Promise<string>)();
+        const { data } = parseFrontmatter<BlogMeta>(fileContent);
+        const postSlug = path.split("/").pop()?.replace(".md", "") ?? "";
+        entries.push({ slug: postSlug, meta: data });
       }
       entries.sort(
-        (a, b) => new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime()
-      )
-      setAllPosts(entries)
+        (a, b) =>
+          new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime(),
+      );
+      setAllPosts(entries);
     }
 
-    loadPost()
-    loadAllPosts()
-  }, [slug])
+    loadPost();
+    loadAllPosts();
+  }, [slug]);
 
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" })
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-  const pageUrl = encodeURIComponent(window.location.href)
-  const pageTitle = encodeURIComponent(meta?.title ?? "")
+  const pageUrl = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(meta?.title ?? "");
 
   const shareLinks = [
     {
@@ -105,14 +107,37 @@ export default function BlogPost() {
         </svg>
       ),
     },
-  ]
+  ];
 
-  if (!meta) return <div className="p-10">Loading...</div>
+  if (!meta) return <div className="p-10">Loading...</div>;
 
-  const otherPosts = allPosts.filter((p) => p.slug !== slug)
+  const otherPosts = allPosts.filter((p) => p.slug !== slug);
 
   return (
     <>
+      <Helmet>
+        <title>{meta.title}</title>
+
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content={`https://www.tauraigombera.com/posts/${slug}`}
+        />
+        <meta
+          property="og:image"
+          content={`https://www.tauraigombera.com${meta.image}`}
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.excerpt} />
+        <meta
+          name="twitter:image"
+          content={`https://www.tauraigombera.com${meta.image}`}
+        />
+      </Helmet>
       <div className="max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold text-theme">{meta.title}</h1>
 
@@ -166,5 +191,5 @@ export default function BlogPost() {
         </div>
       </div>
     </>
-  )
+  );
 }
