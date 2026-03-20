@@ -18,13 +18,13 @@ export default async (request, context) => {
 
   const ogTags = `
     <meta property="og:title" content="${meta.title}" />
-    <meta property="og:description" content="${meta.excerpt}" />
+    <meta property="og:excerpt" content="${meta.excerpt}" />
     <meta property="og:image" content="${meta.image}" />
     <meta property="og:url" content="https://www.tauraigombera.com${url.pathname}" />
     <meta property="og:type" content="article" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${meta.title}" />
-    <meta name="twitter:description" content="${meta.excerpt}" />
+    <meta name="twitter:excerpt" content="${meta.excerpt}" />
     <meta name="twitter:image" content="${meta.image}" />
   `;
 
