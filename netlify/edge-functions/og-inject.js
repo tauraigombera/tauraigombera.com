@@ -6,7 +6,7 @@ export default async (request, context) => {
     "the-ussd-trap-why-malawi-banks-are-funding-their-own-disruption": {
       title: "The USSD Trap: Why Malawi Banks Are Funding Their Own Disruption",
       excerpt: "Back in the day, USSD was a hero of financial inclusion. Back then, it made perfect sense because networks were slow, most people had feature phones, smartphones were expensive, and mobile data was something you thought twice about buying.",
-      image: "https://www.tauraigombera.com/burn-the-ussd.png",
+      image: "https://www.tauraigombera.com/burn-the-ussd.webp",
     },
   };
 
