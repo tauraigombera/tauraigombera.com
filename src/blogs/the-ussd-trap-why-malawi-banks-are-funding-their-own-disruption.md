@@ -2,7 +2,7 @@
 title: The USSD Trap: Why Malawi Banks Are Funding Their Own Disruption
 date: 2026-03-21
 readTime: 7 min read
-excerpt: Back in the day, USSD was a hero of financial inclusion. Back then, it made perfect sense because networks were slow, most people had feature phones, smartphones were expensive, and mobile data was something you thought twice about buying.
+excerpt: USSD was once a hero of financial inclusion in Malawi. It made perfect sense at the time because networks were slow, smartphones were expensive, and mobile data was something people thought twice about buying.
 image: /burn-the-ussd.png
 ---
 
