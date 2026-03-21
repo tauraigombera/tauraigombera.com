@@ -23,7 +23,7 @@ function About() {
 
           {/* Tagline */}
           <p className="italic text-sm space-x-1 mb-6">
-            Digital Transformation | Financial Technology | Human Interface Design | Software Engineering | Learning & Sharing
+            Digital Banking | Financial Technology | Software Engineering
           </p>
 
           {/* Social Links */}
@@ -33,10 +33,11 @@ function About() {
 
           {/* About Text */}
           <p className="text-lg md:text-xl leading-relaxed mb-12">
-            I'm <span className="font-semibold">Taurai Gombera</span>, a Digital Banking Professional and Software Developer. 
-            I manage and develop digital services that enhance customer experience. I write about digital 
-            transformation, financial technology, human interface design, and software engineering. 
-            I mentor young people interested in learning and persuing careers in tech.
+            I'm <span className="font-semibold">Taurai Gombera</span>, a Digital Banking Professional and Software Developer.
+            I work on systems that shape how customers interact with banks from payments and onboarding to the overall 
+            user experience. I write about digital banking, fintech, user experience, and software engineering, often 
+            exploring where institutions are getting it wrong and what needs to change. I’m also passionate about 
+            mentoring young people who are interested in building careers in technology.
           </p>
 
           <p className="italic mb-12">

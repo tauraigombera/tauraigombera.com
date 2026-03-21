@@ -28,11 +28,11 @@ export default function HeroSection() {
 
                {/* Tagline */}
               <p className="italic text-sm space-x-1">
-                Digital Transformation | Financial Technology | Human Interface Design | Software Engineering | Learning & Sharing
+                Digital Banking | Financial Technology | Software Engineering
               </p>
 
               <p>
-                Making people's lives a little easier through digital transformation.
+                Building and exploring digital solutions that shape the future of financial services.
               </p>
 
               {/* Social Icons */}
