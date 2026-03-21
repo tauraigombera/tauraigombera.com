@@ -1,9 +1,3 @@
-// Polyfill for react-snap's old Chromium
-if (!Object.hasOwn) {
-  Object.hasOwn = (obj, prop) =>
-    Object.prototype.hasOwnProperty.call(obj, prop);
-}
-
 import React from "react";
 import { hydrateRoot, createRoot } from "react-dom/client";
 import App from "./App.tsx";
