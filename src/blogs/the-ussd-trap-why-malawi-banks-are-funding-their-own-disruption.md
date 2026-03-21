@@ -2,7 +2,7 @@
 title: The USSD Trap: Why Malawi Banks Are Funding Their Own Disruption
 date: 2026-03-21
 readTime: 7 min read
-excerpt: USSD was once a hero of financial inclusion in Malawi. But in 2026, it is quietly becoming the reason banks are losing the digital race.
+excerpt: USSD was once a hero of financial inclusion in Malawi. But in 2026, it is quietly becoming the reason banks are losing the digital race in Malawi.
 image: /burn-the-ussd.png
 ---
 
