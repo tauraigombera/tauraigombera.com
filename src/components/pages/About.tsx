@@ -7,9 +7,12 @@ function About() {
     <>
       <section
         id="about"
-        className="bg-gray flex flex-col items-center mt-12 px-6 md:px-12 lg:px-24 text-center"
+        className="bg-gray flex flex-col items-center px-6 md:px-12 lg:px-24 text-center"
       >
         <div className="max-w-3xl w-full flex flex-col items-center">
+
+          {/* About Heading */}
+          <h1 className="text-3xl font-bold mb-8">About</h1>
 
           {/* Profile Image */}
           <img
@@ -30,7 +33,7 @@ function About() {
 
           {/* About Text */}
           <p className="text-lg md:text-xl leading-relaxed mb-12">
-            I’m <span className="font-semibold">Taurai Gombera</span>, a Digital Banking Professional and Software Developer. 
+            I'm <span className="font-semibold">Taurai Gombera</span>, a Digital Banking Professional and Software Developer. 
             I manage and develop digital services that enhance customer experience. I write about digital 
             transformation, financial technology, human interface design, and software engineering. 
             I mentor young people interested in learning and persuing careers in tech.
