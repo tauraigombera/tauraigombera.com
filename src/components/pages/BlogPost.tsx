@@ -148,7 +148,7 @@ export default function BlogPost() {
           <span>{meta.readTime}</span>
         </div>
 
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-lg max-w-none dark:prose-invert">
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
 
