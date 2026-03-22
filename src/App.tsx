@@ -5,11 +5,13 @@ import About from "./components/pages/About";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { useDarkMode } from "./hooks/useDarkMode";
 
 function App() {
+  const { isDark, toggle } = useDarkMode();
   return (
-    <div className="bg-gray text-mytext font-atkinson font-mono min-h-screen flex flex-col sm:mx-auto px-2">
-      <Header />
+    <div className="bg-gray dark:bg-darkTheme dark:text-gray text-mytext font-atkinson font-mono min-h-screen flex flex-col sm:mx-auto px-2">
+      <Header isDark={isDark} onToggle={toggle} />
 
       <main className="flex-1">
         <Routes>
