@@ -9,6 +9,7 @@ export default {
         theme: "#0d6da2",
         gray: "#e5e7eb",
         mytext: "#575757",
+        darkTheme: "#212737",
         /* old theme color: #4f46e5; */
       },
       screens: {
