@@ -2,8 +2,14 @@ import MobileMenu from "./MobileMenu";
 import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Devider from "./Devider";
+import { Sun, Moon } from "lucide-react";
 
-function Header() {
+type HeaderProps = {
+  isDark: boolean;
+  onToggle: () => void;
+};
+
+function Header({ isDark, onToggle }: HeaderProps) {
   const navItems = ["Posts", "About"];
   const [visibleNavbar, setVisibleNavbar] = useState(false);
 
@@ -23,17 +29,29 @@ function Header() {
           </section>
         </NavLink>
 
-        <ul className="hidden md:flex space-x-12 items-centre">
-          {navItems.map((navItem) => (
-            <li id="navItem" key={navItem}>
-              <NavLink
-                to={navItem === "Home" ? "/" : `/${navItem.toLowerCase()}`}
-              >
-                {navItem}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+          <div className="flex items-center space-x-12 justify-between">
+          {/* Nav items (hidden on small screens) */}
+          <ul className="hidden md:flex space-x-12 items-center">
+            {navItems.map((navItem) => (
+              <li key={navItem}>
+                <NavLink
+                  to={navItem === "Home" ? "/" : `/${navItem.toLowerCase()}`}
+                >
+                  {navItem}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+
+          {/* Dark mode toggle (always visible) */}
+          <button
+            onClick={onToggle}
+            className="text-gray-500 hover:text-black dark:hover:text-white transition-colors"
+            aria-label="Toggle dark mode"
+          >
+            {isDark ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+        </div>
 
         <button
           ref={navRef}
