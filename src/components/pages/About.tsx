@@ -7,7 +7,7 @@ function About() {
     <>
       <section
         id="about"
-        className="bg-gray flex flex-col items-center px-6 md:px-12 lg:px-24 text-center"
+        className="flex flex-col items-center px-6 md:px-12 lg:px-24 text-center"
       >
         <div className="max-w-3xl w-full flex flex-col items-center">
 
