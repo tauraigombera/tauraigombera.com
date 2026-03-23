@@ -6,6 +6,7 @@ import { parseFrontmatter } from "../../utils/parseFrontmatter";
 import { dateFormatter } from "../../utils/dateFormatter";
 import { Calendar, ChevronUp } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import ReadingProgressBar from "../ReadingProgressBar";
 
 type BlogEntry = { slug: string; meta: BlogMeta };
 
@@ -115,6 +116,7 @@ export default function BlogPost() {
 
   return (
     <>
+      <ReadingProgressBar />
       <Helmet>
         <title>{meta.title}</title>
 
