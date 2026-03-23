@@ -6,7 +6,7 @@ excerpt: USSD was once a hero of financial inclusion in Malawi. But in 2026, it 
 image: /burn-the-ussd.png
 ---
 
-![Smartphone usage in Africa](/burn-the-ussd.png)
+![Why Malawi Banks Are Funding Their Own Disruption](/burn-the-ussd.png)
     
 USSD was once a hero of financial inclusion in Malawi. It made perfect sense at the time because networks were slow, smartphones were expensive, and mobile data was something people thought twice about buying. Dialling a shortcode (*xyz#), entering a PIN, and sending money that credits the recipient instantly felt revolutionary. For the first time, millions of people could access financial services without needing internet or a bank branch.
 
