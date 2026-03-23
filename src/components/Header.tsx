@@ -33,7 +33,7 @@ function Header({ isDark, onToggle }: HeaderProps) {
           {/* Nav items (hidden on small screens) */}
           <ul className="hidden md:flex space-x-12 items-center">
             {navItems.map((navItem) => (
-              <li key={navItem}>
+              <li id="navItem" key={navItem}>
                 <NavLink
                   to={navItem === "Home" ? "/" : `/${navItem.toLowerCase()}`}
                 >
