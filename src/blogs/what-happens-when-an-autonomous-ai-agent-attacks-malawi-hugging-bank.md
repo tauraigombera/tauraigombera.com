@@ -8,7 +8,7 @@ image: /hugging-bank.jpg
 
 ![What would happen if an autonomous AI agent found its way into the Malawi Hugging Bank's systems?](/hugging-bank.jpg)
 
-If you have been following recent AI headlines, you have probably seen the growing debate about AI safety. Experts have been pointing to recent incidents involving AI systems behaving in ways their creators did not expect. Recently, Hugging Face, an AI company based in New York, had parts of its infrastructure compromised by AI agents during an OpenAI security evaluation.
+If you have been following recent AI headlines, you have probably seen the growing debate about AI safety. Experts have been pointing to recent incidents involving AI systems behaving in ways their creators did not expect. Recently, Hugging Face, an AI company based in New York, had parts of its infrastructure compromised by AI agents during an [OpenAI security evaluation](https://openai.com/index/hugging-face-incident-and-the-road-ahead/).
 
 In this article, we will look at what happened and then imagine a hypothetical situation where something similar happens to a Malawian financial institution. Let's call it Malawi Hugging Bank.
 
@@ -24,7 +24,7 @@ The breach was contained within hours of discovery, with Hugging Face working wi
 
 But the incident raises a terrifying question. What if the AI agents had not reached Hugging Face? What if, instead, they had found a vulnerable financial institution right here in Malawi?
 
-What would happen if an autonomous AI agent found its way into the systems of Malawi Hugging Bank, a fictional bank? How quickly would the bank realise what was happening? How would it respond? And perhaps most importantly, who would come to help? Let's imagine.
+What would happen if an autonomous AI agent found its way into the systems of Malawi Hugging Bank (a fictional bank)? How quickly would the bank realise what was happening? How would it respond? And perhaps most importantly, who would come to help? Let's imagine.
 
 ### How it would happen to Malawi Hugging Bank (MHB)
 
@@ -82,9 +82,9 @@ By Tuesday morning, the Malawi Hugging Bank makes the decision nobody wanted to 
 
 ### The Takeaway
 
-This is where the story stops being about a theoretical hugging bank in Malawi. It is about how prepared are developing nations like Malawi for AI.
+This is where the story stops being about a theoretical hugging bank in Malawi. It is about how prepared developing nations like Malawi are for AI.
 
-When technology leaders talk about "AI safety" and "pacing the frontier", it can sound like a high-level debate happening somewhere in Silicon Valley but it is not. The decisions being made in those AI labs could eventually have consequences far beyond Silicon Valley.
+When AI tech leaders such as Dario Amodei talk about "AI safety" and ["pacing the frontier"](https://darioamodei.com/post/we-must-pace-the-frontier), it can sound like a high-level debate happening somewhere in Silicon Valley but it is not. The decisions being made in those AI labs could eventually have consequences far beyond Silicon Valley.
 
 The organisations building frontier AI have some of the world's best AI researchers, cybersecurity teams and incident-response capabilities. However, for developing nations like Malawi, there is an additional problem because **we may not have the same safety net.**
 
