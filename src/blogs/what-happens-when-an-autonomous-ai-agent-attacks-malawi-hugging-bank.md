@@ -2,7 +2,7 @@
 title: What Happens When an Autonomous AI Agent Attacks Malawi Hugging Bank(MHB)?
 date: 2026-09-14
 readTime: 7 min read
-excerpt: What would happen if an autonomous AI agent found its way into the systems of Malawi Hugging Bank, a fictional bank? How quickly would the bank realise what was happening? How would it respond? And perhaps most importantly, who would come to help?
+excerpt: What if an autonomous AI agent found its way into a Malawian bank? How quickly would the bank realise what was happening? How would it respond? And perhaps most importantly, who would come to help?
 image: /hugging-bank.jpg
 ---
 
