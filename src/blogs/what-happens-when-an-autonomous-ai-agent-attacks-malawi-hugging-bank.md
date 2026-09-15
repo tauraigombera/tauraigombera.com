@@ -55,7 +55,7 @@ It is Monday morning at Malawi Hugging Bank’s headquarters in Blantyre, and to
 - The banking app crashes, leaving thousands unable to transfer money, buy electricity, or buy food at the market.
 - Social media is ablaze with memes and comments roasting the Malawi Hugging Bank. _“Bank ya alimi,”_ one comment reads under a trending _"Mikozi"_ post.
 
-Inside the IT department, nobody knows what is happening yet. Someone suggests a network problem. Someone else asks whether there has been another fibre cut in Mozambique and others suspect ESCOM power outage and primary site desil generator failure to pick. Others aks if there has been a recent change deployed to production. The internal WhatsApp group for the IT team is blowing up with screenshots of weird network traffic logs.
+Inside the IT department, nobody knows what is happening yet. Someone suggests a network problem. Someone else asks whether there has been another fibre cut in Mozambique. Others suspect ESCOM power outage and primary site desil generator failure to pick. Management suspects there has been a recent change deployed to production without an approved change request. The internal WhatsApp group for the IT team is blowing up with screenshots of weird network traffic logs.
 
 Then someone notices something unusual. The servers are running at nearly 100%. There are thousands of automated requests moving through the environment. Passwords are changing. Processes are starting and stopping. Connections are appearing and disappearing. This doesn't look like a normal outage. 
 
