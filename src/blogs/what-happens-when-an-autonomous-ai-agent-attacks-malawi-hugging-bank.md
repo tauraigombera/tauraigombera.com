@@ -34,7 +34,7 @@ Let's imagine that three weeks earlier, an overworked developer at Malawi Huggin
 
 It is past midnight, and there is a production issue. There is pressure from management to fix it. And, because this is Malawi, there is also a power outage. Tired and frustrated, the Malawi Hugging Bank developer accidentally uploads a code snippet to a public GitHub repository. Buried somewhere in the code is a live secret key connected to one of the bank's systems. He forgets to remove it, and nobody notices. For three weeks, nothing happens. Then the AI finds it.
 
-To a human hacker, the key might be buried in the noise of millions of files on the internet. However, to an autonomous AI agent scanning millions of web pages per second, this is an open door. It finds it and try to exploit it:
+To a human hacker, the key might be buried in the noise of millions of files on the internet. However, to an autonomous AI agent scanning millions of web pages per second, this is an open door. It finds it and tries to exploit it:
 
 ```bash
 [AI_SWARM]: Sandbox bypass complete.
